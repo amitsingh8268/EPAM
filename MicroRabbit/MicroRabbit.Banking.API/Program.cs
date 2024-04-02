@@ -1,3 +1,8 @@
+using MediatR;
+using MicroRabbit.Banking.Data.Context;
+using MicroRabbit.Infra.Ioc;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -6,6 +11,11 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+builder.Services.AddDbContext<BankingDBContext>(option =>
+{
+    option.UseSqlServer(builder.Configuration.GetConnectionString("BankingDbConnection"));
+});
+builder.Services.AddCustomServices();
 
 var app = builder.Build();
 
@@ -21,5 +31,4 @@ app.UseHttpsRedirection();
 app.UseAuthorization();
 
 app.MapControllers();
-
 app.Run();
