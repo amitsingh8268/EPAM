@@ -17,7 +17,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MicroRabbit.Domain.Core", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicroRabbit.Infa.Bus", "MicroRabbit.Infa.Bus\MicroRabbit.Infa.Bus.csproj", "{774FEEF7-485A-40D6-93AF-E0F47D4B9B0D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicroRabbit.Infra.ioc", "MicroRabbit.Infra.ioc\MicroRabbit.Infra.ioc.csproj", "{2C8DAD1C-1B87-460D-B1F3-64D469D54D41}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicroRabbit.Infra.Ioc", "MicroRabbit.Infra.ioc\MicroRabbit.Infra.Ioc.csproj", "{2C8DAD1C-1B87-460D-B1F3-64D469D54D41}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
