@@ -1,6 +1,0 @@
-@MicroRabbit.Banking.API_HostAddress = http://localhost:5188
-
-GET {{MicroRabbit.Banking.API_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###
