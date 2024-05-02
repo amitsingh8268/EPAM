@@ -1,0 +1,6 @@
+@EPAM_POC_HostAddress = http://localhost:5084
+
+GET {{EPAM_POC_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
